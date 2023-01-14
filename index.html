@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 20</title>
+    <style>
+        .alert_zone{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: dimgray;
+            opacity: 0.5;
+        }
+        .alert_content{
+            position: fixed;
+            top: 100px;
+            left: 35vw;
+            border: 1px solid gray;
+            border-radius: 2px;
+            background-color: white;
+        }
+        .container{
+            display: flex;
+            justify-content: end;
+        }
+        .close{
+            padding: 8px;
+            width: 18px;
+            border: 1px solid gray;
+            border-radius: 2px;
+            color: white;
+            background-color: rgb(180, 180, 180);
+            cursor: pointer;
+        }
+        .img_content{
+            width: 30vw;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="imgList" class="img_list"></div>
+
+<div id="alertZone" class="alert_zone hide"></div>
+<div id="alertContent" class="alert_content hide">
+    <div class="container">
+        <div id="close" class="close">X</div>
+    </div>
+    <img id="imgContent" class="img_content">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
